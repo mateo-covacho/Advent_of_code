@@ -1,8 +1,10 @@
-//use std::env;
-use std::fs;
+use std::{
+    env::{self},
+    fs,
+};
 
 fn main() {
-    let file_path = "/Users/mateo.covacho/programming/Advent_of_code/Day_1/src/input.txt";
+    let file_path = "src/input.txt";
 
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
 
